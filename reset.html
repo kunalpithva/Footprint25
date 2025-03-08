@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Scheduler</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center items-center min-h-screen bg-slate-50">
+      <section
+        class="flex flex-col gap-6 p-10 w-full bg-white rounded-lg max-w-[800px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] max-md:p-8 max-md:m-6 max-sm:p-6 max-sm:m-4"
+      >
+        <header
+          class="mb-5 text-2xl font-semibold text-blue-500 max-md:text-2xl max-sm:text-xl"
+        >
+          Meeting Scheduler
+        </header>
+
+        <form class="flex flex-col gap-4">
+          <h2
+            class="mb-4 text-xl font-semibold text-gray-800 max-md:text-lg max-sm:text-base"
+          >
+            New Password
+          </h2>
+
+          <div class="flex relative items-center">
+            <input
+              type="password"
+              id="new-password"
+              placeholder="New password"
+              required
+              class="p-3 w-full text-sm rounded-md border border-solid duration-[0.2s] transition-[border-color]"
+              aria-required="true"
+            />
+            <span
+              class="absolute right-3 top-2/4 text-red-500 -translate-y-2/4"
+              aria-hidden="true"
+            >
+              *
+            </span>
+          </div>
+
+          <div class="flex relative items-center">
+            <input
+              type="password"
+              id="repeat-password"
+              placeholder="Repeat password"
+              required
+              class="p-3 w-full text-sm rounded-md border border-solid duration-[0.2s] transition-[border-color]"
+              aria-required="true"
+            />
+            <span
+              class="absolute right-3 top-2/4 text-red-500 -translate-y-2/4"
+              aria-hidden="true"
+            >
+              *
+            </span>
+          </div>
+
+          <button
+            type="submit"
+            class="p-3 text-base font-medium bg-blue-500 rounded-md cursor-pointer border-[none] duration-[0.2s] text-[white] transition-[background-color] hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300"
+          >
+            Finish
+          </button>
+        </form>
+
+        <section class="mt-6">
+          <h2 class="mb-4 text-base text-gray-800">
+            Choose your new password.
+          </h2>
+
+          <ul class="flex flex-col gap-3">
+            <li class="gap-2 text-sm text-gray-600 max-sm:text-sm">
+              Your previous can't be the new password.
+            </li>
+            <li class="gap-2 text-sm text-gray-600 max-sm:text-sm">
+              Your password must be 8 characters.
+            </li>
+            <li class="gap-2 text-sm text-gray-600 max-sm:text-sm">
+              Your password should contain upper case letters, lower case letter
+              and numbers.
+            </li>
+          </ul>
+        </section>
+
+        <footer
+          class="flex gap-2 items-center mt-6 text-sm text-gray-500 max-sm:flex-col max-sm:gap-1 max-sm:items-start"
+        >
+          <a
+            href="#"
+            class="cursor-pointer hover:text-blue-500 transition-colors"
+            >Terms of user</a
+          >
+          <span class="text-gray-300 max-sm:hidden">|</span>
+          <a
+            href="#"
+            class="cursor-pointer hover:text-blue-500 transition-colors"
+            >Privacy policy</a
+          >
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

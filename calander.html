@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar Integration</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.30.0/tabler-icons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .toggle-switch {
+        position: relative;
+      }
+
+      .toggle-switch::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+      }
+
+      .toggle-switch.active {
+        background-color: #3b82f6;
+      }
+
+      .toggle-switch.active::before {
+        transform: translateX(16px);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50">
+    <div class="flex min-h-screen bg-slate-50">
+      <!-- Sidebar -->
+      <nav
+        class="flex flex-col items-center px-0 py-5 w-20 bg-white border-r border-solid max-sm:px-0 max-sm:py-4 max-sm:w-[60px]"
+      >
+        <!-- Logo -->
+        <div
+          class="flex justify-center items-center mb-10 w-10 h-10 bg-gray-200 rounded-lg max-sm:w-8 max-sm:h-8"
+        >
+          <i class="ti ti-user"></i>
+        </div>
+
+        <!-- Navigation Items -->
+        <div class="flex flex-col grow gap-5">
+          <button
+            class="flex justify-center items-center w-10 h-10 cursor-pointer text-slate-500 max-sm:w-8 max-sm:h-8"
+          >
+            <i class="ti ti-video"></i>
+          </button>
+          <button
+            class="flex justify-center items-center w-10 h-10 cursor-pointer text-slate-500 max-sm:w-8 max-sm:h-8"
+          >
+            <i class="ti ti-message"></i>
+          </button>
+          <button
+            class="flex justify-center items-center w-10 h-10 cursor-pointer text-slate-500 max-sm:w-8 max-sm:h-8"
+          >
+            <i class="ti ti-calendar"></i>
+          </button>
+          <button
+            class="flex justify-center items-center w-10 h-10 cursor-pointer text-slate-500 max-sm:w-8 max-sm:h-8"
+          >
+            <i class="ti ti-settings"></i>
+          </button>
+        </div>
+
+        <!-- Profile -->
+        <div class="mb-5">
+          <div
+            class="w-10 h-10 bg-gray-200 rounded-full max-sm:w-8 max-sm:h-8"
+          ></div>
+        </div>
+
+        <!-- Sign Out -->
+        <button class="mb-5 text-sm text-red-500 cursor-pointer">
+          Sign out
+        </button>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="grow p-10 bg-slate-50 max-md:p-5 max-sm:p-4">
+        <!-- Calendar Header -->
+        <header class="mb-8 max-sm:mb-5">
+          <h1 class="mb-2 text-2xl font-semibold text-gray-900 max-sm:text-xl">
+            Calendar Integration
+          </h1>
+          <p class="mb-5 text-sm text-gray-500">
+            Connect and sync your calendar events with Google Calendar
+          </p>
+          <button
+            class="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md cursor-pointer"
+          >
+            Add Calendar
+          </button>
+        </header>
+
+        <!-- Calendar Card -->
+        <section
+          class="p-6 bg-white rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.1)] max-sm:p-4"
+        >
+          <!-- Calendar Info -->
+          <div class="flex items-center mb-6">
+            <div
+              class="flex justify-center items-center mr-4 w-10 h-10 bg-gray-200 rounded-lg"
+            >
+              <i class="ti ti-calendar"></i>
+            </div>
+            <div class="grow">
+              <p class="text-sm text-gray-900">example123@gmail.com</p>
+              <p class="text-xs text-blue-500">Active</p>
+            </div>
+            <button class="text-gray-500">
+              <i class="ti ti-chevron-up"></i>
+            </button>
+          </div>
+
+          <!-- Calendar Section -->
+          <div class="mb-6">
+            <h2 class="mb-4 text-base font-medium text-gray-900">
+              Calendar names and availability
+            </h2>
+
+            <!-- Calendar Items -->
+            <div class="flex flex-col gap-4">
+              <!-- Calendar Item 1 -->
+              <article
+                class="flex justify-between items-center p-4 rounded-lg bg-slate-50 max-sm:p-3"
+              >
+                <div class="grow">
+                  <h3 class="mb-1 text-sm text-gray-900">Emailed events</h3>
+                  <p class="mb-1 text-xs text-gray-500">
+                    Read & Write - Emailed events
+                  </p>
+                  <p class="text-xs text-blue-500">User for scheduling</p>
+                </div>
+                <div
+                  class="toggle-switch active relative w-10 h-6 bg-gray-200 rounded-xl cursor-pointer"
+                ></div>
+              </article>
+
+              <!-- Calendar Item 2 -->
+              <article
+                class="flex justify-between items-center p-4 rounded-lg bg-slate-50 max-sm:p-3"
+              >
+                <div class="grow">
+                  <h3 class="mb-1 text-sm text-gray-900">
+                    Holidays in Pakistan @ (Karachi/Pak)
+                  </h3>
+                  <p class="mb-1 text-xs text-gray-500">
+                    Read Only - Holidays and Observances in Pakistan
+                  </p>
+                </div>
+                <div
+                  class="toggle-switch active relative w-10 h-6 bg-gray-200 rounded-xl cursor-pointer"
+                ></div>
+              </article>
+
+              <!-- Calendar Item 3 -->
+              <article
+                class="flex justify-between items-center p-4 rounded-lg bg-slate-50 max-sm:p-3"
+              >
+                <div class="grow">
+                  <h3 class="mb-1 text-sm text-gray-900">
+                    example123@gmail.com
+                  </h3>
+                  <p class="mb-1 text-xs text-gray-500">Read & Write</p>
+                  <p class="text-xs text-blue-500">Schedule events here</p>
+                </div>
+                <div
+                  class="toggle-switch active relative w-10 h-6 bg-gray-200 rounded-xl cursor-pointer"
+                ></div>
+              </article>
+
+              <!-- Calendar Item 4 -->
+              <article
+                class="flex justify-between items-center p-4 rounded-lg bg-slate-50 max-sm:p-3"
+              >
+                <div class="grow">
+                  <h3 class="mb-1 text-sm text-gray-900">
+                    Birthdays @ (Karachi/Pak)
+                  </h3>
+                  <p class="mb-1 text-xs text-gray-500">
+                    Read & Write - Display birthdays, anniversaries and other.
+                  </p>
+                </div>
+                <div
+                  class="toggle-switch relative w-10 h-6 bg-gray-200 rounded-xl cursor-pointer"
+                ></div>
+              </article>
+
+              <!-- Calendar Item 5 -->
+              <article
+                class="flex justify-between items-center p-4 rounded-lg bg-slate-50 max-sm:p-3"
+              >
+                <div class="grow">
+                  <h3 class="mb-1 text-sm text-gray-900">
+                    Eid-ul-fiter @ (Karachi/Pak)
+                  </h3>
+                  <p class="mb-1 text-xs text-gray-500">
+                    Read only - To track team availability
+                  </p>
+                </div>
+                <div
+                  class="toggle-switch relative w-10 h-6 bg-gray-200 rounded-xl cursor-pointer"
+                ></div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Disconnect Section -->
+          <div class="text-center max-sm:mt-5">
+            <h2 class="mb-2 text-base font-medium text-gray-900">
+              Disconnect Calendar?
+            </h2>
+            <p class="mb-4 text-sm text-gray-500">
+              All events related to it will be removed form Google Calendar
+              also.
+            </p>
+            <button
+              class="px-4 py-2 text-sm font-medium text-white bg-red-500 rounded-md cursor-pointer"
+            >
+              Disconnect
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      // Toggle switch functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleSwitches = document.querySelectorAll(".toggle-switch");
+
+        toggleSwitches.forEach((toggle) => {
+          toggle.addEventListener("click", function () {
+            this.classList.toggle("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
