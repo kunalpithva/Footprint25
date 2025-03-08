@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Scheduler</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flex justify-center items-center min-h-screen bg-slate-50">
+      <div
+        class="flex gap-20 p-5 max-w-[1200px] max-md:flex-col max-md:gap-10 max-md:items-center"
+      >
+        <section
+          class="p-10 bg-white rounded-xl shadow-[0_4px_6px_rgba(0,0,0,0.05)] w-[400px] max-sm:p-5 max-sm:w-full"
+        >
+          <h1 class="mb-10 text-2xl font-semibold text-gray-800">
+            Personal Details
+          </h1>
+          <form>
+            <div class="relative mb-5">
+              <input
+                type="text"
+                placeholder="First Name"
+                required
+                class="px-4 py-3 w-full text-base text-gray-800 rounded-lg border border-solid transition-all duration-[0.3s]"
+                aria-required="true"
+              />
+              <span class="absolute top-3 -right-3 text-red-500" aria-hidden="true"
+                >*</span
+              >
+            </div>
+            <div class="relative mb-5">
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="px-4 py-3 w-full text-base text-gray-800 rounded-lg border border-solid transition-all duration-[0.3s]"
+              />
+            </div>
+            <div class="relative mb-5">
+              <div class="relative">
+                <select
+                  required
+                  disabled
+                  class="px-4 py-3 w-full text-base text-gray-800 rounded-lg border border-solid transition-all duration-[0.3s] appearance-none"
+                  aria-required="true"
+                >
+                  <option value="" disabled selected>Country/Region</option>
+                </select>
+                <span
+                  class="absolute top-3 -right-3 text-red-500"
+                  aria-hidden="true"
+                  >*</span
+                >
+                <span
+                  class="absolute right-4 top-2/4 border-solid -translate-y-2/4 pointer-events-none border-[#6b7280_transparent_transparent_transparent] border-[6px_6px_0_6px]"
+                ></span>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="p-3 mt-5 w-full text-base font-medium bg-blue-500 rounded-lg cursor-pointer border-none duration-[0.3s] text-white transition-[background-color] hover:bg-blue-600"
+            >
+              Finish
+            </button>
+          </form>
+          <nav class="flex gap-2 justify-center mt-5 text-sm text-gray-500">
+            <a href="#" class="cursor-pointer hover:text-gray-700">Terms of user</a>
+            <span class="text-gray-300">|</span>
+            <a href="#" class="cursor-pointer hover:text-gray-700"
+              >Privacy policy</a
+            >
+          </nav>
+        </section>
+    
+        <section class="px-0 py-10 max-w-[400px] max-sm:p-5 max-sm:w-full">
+          <h2 class="mb-6 text-3xl font-semibold text-blue-500 max-sm:text-2xl">
+            Meeting Scheduler
+          </h2>
+          <p class="text-2xl leading-normal text-gray-600 max-sm:text-lg">
+            Once your have
+            <strong class="font-medium text-gray-800">created</strong>
+            your account you will be
+            <strong class="font-medium text-gray-800">redirected</strong>
+            to the
+            <strong class="font-medium text-gray-800">Log in</strong>
+            page where you can Log in and
+            <strong class="font-medium text-gray-800">interact</strong>
+            with the Meeting Scheduler App.
+          </p>
+        </section>
+      </div>
+    </main>
+    
+  </body>
+</html>

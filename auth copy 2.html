@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <div class="flex h-screen">
+      <nav
+        class="flex flex-col items-center px-0 py-5 bg-white border-r border-solid w-[72px] max-sm:px-0 max-sm:py-4 max-sm:w-[60px]"
+      >
+        <div
+          class="flex justify-center items-center mb-10 w-10 h-10 bg-gray-200 rounded-lg"
+        >
+          <i class="ti ti-user"></i>
+        </div>
+        <div class="flex flex-col grow gap-8">
+          <button
+            class="flex justify-center items-center w-10 h-10 text-gray-500 hover:text-blue-500 cursor-pointer"
+          >
+            <i class="ti ti-calendar"></i>
+          </button>
+          <button
+            class="flex justify-center items-center w-10 h-10 text-gray-500 hover:text-blue-500 cursor-pointer"
+          >
+            <i class="ti ti-video"></i>
+          </button>
+          <button
+            class="flex justify-center items-center w-10 h-10 text-gray-500 hover:text-blue-500 cursor-pointer"
+          >
+            <i class="ti ti-message"></i>
+          </button>
+          <button
+            class="flex justify-center items-center w-10 h-10 text-gray-500 hover:text-blue-500 cursor-pointer"
+          >
+            <i class="ti ti-calendar-event"></i>
+          </button>
+          <button
+            class="flex justify-center items-center w-10 h-10 text-gray-500 hover:text-blue-500 cursor-pointer"
+          >
+            <i class="ti ti-settings"></i>
+          </button>
+        </div>
+        <div class="overflow-hidden mt-auto w-10 h-10 rounded-full">
+          <img
+            src="https://placehold.co/40x40/e0e0e0/e0e0e0"
+            alt="Profile"
+            class="object-cover size-full"
+          />
+        </div>
+      </nav>
+
+      <main class="flex flex-col grow gap-6 px-10 py-5 max-md:p-4 max-sm:p-3">
+        <header class="flex justify-between items-center">
+          <div
+            class="flex gap-2 items-center px-4 py-2 bg-white rounded-lg w-[300px]"
+          >
+            <i class="ti ti-search text-gray-500"></i>
+            <input
+              type="text"
+              placeholder="Search"
+              class="w-full text-sm border-none focus:outline-none"
+            />
+          </div>
+          <button
+            class="flex gap-2 items-center px-4 py-2 text-white bg-blue-500 rounded-lg cursor-pointer hover:bg-blue-600"
+          >
+            <span>Category</span>
+            <i class="ti ti-chevron-down"></i>
+          </button>
+        </header>
+
+        <section class="p-6 bg-white rounded-2xl">
+          <h1 class="mb-6 text-2xl font-semibold">Meetings</h1>
+
+          <div
+            class="flex gap-6 p-4 mb-8 bg-gray-50 rounded-xl max-sm:flex-col max-sm:gap-4"
+          >
+            <article class="flex flex-1 gap-4 items-center">
+              <i class="ti ti-video text-2xl text-gray-500"></i>
+              <div class="flex flex-col">
+                <strong class="text-2xl font-semibold">36</strong>
+                <span class="text-sm text-gray-500">No. of meetings</span>
+                <span class="text-xs text-gray-400">This Month</span>
+              </div>
+            </article>
+
+            <article class="flex flex-1 gap-4 items-center">
+              <i class="ti ti-calendar text-2xl text-gray-500"></i>
+              <div class="flex flex-col">
+                <strong class="text-2xl font-semibold">15</strong>
+                <span class="text-sm text-gray-500">Rescheduled meetings</span>
+                <span class="text-xs text-gray-400">This Month</span>
+              </div>
+            </article>
+
+            <article class="flex flex-1 gap-4 items-center">
+              <i class="ti ti-ban text-2xl text-gray-500"></i>
+              <div class="flex flex-col">
+                <strong class="text-2xl font-semibold">2</strong>
+                <span class="text-sm text-gray-500">Cancelled meetings</span>
+                <span class="text-xs text-gray-400">This Month</span>
+              </div>
+            </article>
+          </div>
+
+          <section>
+            <h2 class="mb-6 text-lg font-medium">Today - 3 meetings</h2>
+            <div class="flex gap-6 max-md:flex-col">
+              <article
+                class="flex-1 p-5 bg-white rounded-xl border border-solid"
+              >
+                <div class="flex gap-4 mb-4">
+                  <img
+                    src="https://placehold.co/50x50/4a90e2/4a90e2"
+                    alt="Ahsan Khan"
+                    class="rounded-full h-[50px] w-[50px]"
+                  />
+                  <div class="flex flex-col gap-1">
+                    <h3 class="font-medium">Ahsan Khan</h3>
+                    <span class="text-sm text-gray-500"
+                      >ahsankhan@gmail.com</span
+                    >
+                    <time class="mb-2 text-xs text-gray-500">10:30 AM</time>
+                  </div>
+                </div>
+                <div class="flex gap-4 mb-4">
+                  <span class="text-sm text-gray-500">9 members going</span>
+                  <span class="text-sm text-gray-500">2 pending</span>
+                </div>
+                <div class="flex gap-2 items-center mb-4">
+                  <img
+                    src="https://placehold.co/30x30/4a90e2/4a90e2"
+                    alt="Attendee"
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                  <img
+                    src="https://placehold.co/30x30/4a90e2/4a90e2"
+                    alt="Attendee"
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                  <img
+                    src="https://placehold.co/30x30/4a90e2/4a90e2"
+                    alt="Attendee"
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                  <img
+                    src="https://placehold.co/30x30/4a90e2/4a90e2"
+                    alt="Attendee"
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                  <span class="text-sm text-gray-500">+4 more</span>
+                </div>
+                <button
+                  class="p-2 w-full font-medium text-gray-700 bg-gray-100 rounded-lg cursor-pointer border-none hover:bg-gray-200"
+                >
+                  View details
+                </button>
+              </article>
+
+              <article
+                class="flex-1 p-5 bg-white rounded-xl border border-solid"
+              >
+                <div class="flex gap-4 mb-4">
+                  <img
+                    src="https://placehold.co/50x50/4a90e2/4a90e2"
+                    alt="Viren Gupta"
+                    class="rounded-full h-[50px] w-[50px]"
+                  />
+                  <div class="flex flex-col gap-1">
+                    <h3 class="font-medium">Viren Gupta</h3>
+                    <span class="text-sm text-gray-500">viren@gmail.com</span>
+                    <time class="mb-2 text-xs text-gray-500">11:00 AM</time>
+                  </div>
+                </div>
+                <div class="flex gap-4 mb-4">
+                  <span class="text-sm text-gray-500">14 members going</span>
+                  <span class="text-sm text-gray-500">9 pending</span>
+                </div>
+                <div class="flex gap-2 items-center mb-4">
+                  <img
+                    src="https://placehold.co/30x30/4a90e2/4a90e2"
+                    alt="Attendee"
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                  <img
+                    src="https://placehold.co/30x30/4a90e2/4a90e2"
+                    alt="Attendee"
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                  <img
+                    src="https://placehold.co/30x30/4a90e2/4a90e2"
+                    alt="Attendee"
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                  <span class="text-sm text-gray-500">+7 more</span>
+                </div>
+                <button
+                  class="p-2 w-full font-medium text-gray-700 bg-gray-100 rounded-lg cursor-pointer border-none hover:bg-gray-200"
+                >
+                  View details
+                </button>
+              </article>
+
+              <article
+                class="flex-1 p-5 bg-white rounded-xl border border-solid"
+              >
+                <div class="flex gap-4 mb-4">
+                  <img
+                    src="https://placehold.co/50x50/4a90e2/4a90e2"
+                    alt="Aliya Zafar"
+                    class="rounded-full h-[50px] w-[50px]"
+                  />
+                  <div class="flex flex-col gap-1">
+                    <h3 class="font-medium">Aliya Zafar</h3>
+                    <span class="text-sm text-gray-500">aliya@gmail.com</span>
+                    <time class="mb-2 text-xs text-gray-500">2:30 PM</time>
+                  </div>
+                </div>
+                <div class="flex gap-4 mb-4">
+                  <span class="text-sm text-gray-500">12 members going</span>
+                  <span class="text-sm text-gray-500">5 pending</span>
+                </div>
+                <div class="flex gap-2 items-center mb-4">
+                  <img
+                    src="https://placehold.co/30x30/4a90e2/4a90e2"
+                    alt="Attendee"
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                  <img
+                    src="https://placehold.co/30x30/4a90e2/4a90e2"
+                    alt="Attendee"
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                  <img
+                    src="https://placehold.co/30x30/4a90e2/4a90e2"
+                    alt="Attendee"
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                  <img
+                    src="https://placehold.co/30x30/4a90e2/4a90e2"
+                    alt="Attendee"
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                  <span class="text-sm text-gray-500">+6 more</span>
+                </div>
+                <button
+                  class="p-2 w-full font-medium text-gray-700 bg-gray-100 rounded-lg cursor-pointer border-none hover:bg-gray-200"
+                >
+                  View details
+                </button>
+              </article>
+            </div>
+          </section>
+        </section>
+      </main>
+
+      <aside
+        class="p-5 bg-white border-l border-solid w-[300px] max-md:w-[250px] max-sm:hidden"
+      >
+        <article class="px-0 py-4 border-b border-solid">
+          <time class="mb-2 text-xs text-gray-500">9:45</time>
+          <p class="text-sm">Catchup with Aliya</p>
+        </article>
+
+        <article class="px-0 py-4 border-b border-solid">
+          <time class="mb-2 text-xs text-gray-500">10:25</time>
+          <div class="text-sm">
+            <div class="flex gap-3 items-center">
+              <img src="https://placehold.co/30x30/4a90e2/4a90e2" alt="Ahsan" />
+              <p>Ahsan added you in the meeting</p>
+            </div>
+            <div class="flex gap-2 items-center mt-2">
+              <div class="relative w-10 h-5 bg-blue-500 rounded-xl"></div>
+              <span>Going</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="px-0 py-4 border-b border-solid">
+          <time class="mb-2 text-xs text-gray-500">11:00</time>
+          <div class="text-sm">
+            <p>Sales presentation with Viren Gupta - Daily catchup</p>
+            <p>14 people joining</p>
+          </div>
+        </article>
+
+        <article class="px-0 py-4 border-b border-solid">
+          <time class="mb-2 text-xs text-gray-500">12:00</time>
+          <div class="text-sm">
+            <p>Team voting for outing.</p>
+            <form class="flex flex-col gap-2 mt-2">
+              <label class="flex gap-2 items-center">
+                <input type="radio" name="outing" />
+                <span>Dinner</span>
+              </label>
+              <label class="flex gap-2 items-center">
+                <input type="radio" name="outing" />
+                <span>Movie</span>
+              </label>
+              <label class="flex gap-2 items-center">
+                <input type="radio" name="outing" />
+                <span>Sports</span>
+              </label>
+            </form>
+          </div>
+        </article>
+
+        <div class="flex gap-3 px-0 py-4">
+          <button
+            class="flex-1 p-2 font-medium text-white bg-blue-500 rounded-lg cursor-pointer border-none hover:bg-blue-600"
+          >
+            Refresh
+          </button>
+          <button
+            class="flex-1 p-2 font-medium text-gray-700 bg-gray-100 rounded-lg cursor-pointer border-none hover:bg-gray-200"
+          >
+            Close
+          </button>
+        </div>
+
+        <div class="flex gap-3 items-center p-4 mt-4 bg-blue-50 rounded-lg">
+          <i class="ti ti-bell"></i>
+          <div class="flex flex-col">
+            <span>Inbox</span>
+            <time class="text-xs text-gray-500">Dec 22</time>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

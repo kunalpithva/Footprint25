@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Scheduler</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flex justify-center items-center min-h-screen bg-white">
+      <div
+        class="flex gap-20 items-start p-5 max-md:flex-col max-md:gap-10 max-md:items-center max-md:text-center"
+      >
+        <header
+          class="mb-6 text-3xl font-semibold text-blue-500 max-sm:text-2xl"
+        >
+          Meeting Scheduler
+        </header>
+
+        <div
+          class="flex gap-20 items-start max-md:flex-col max-md:gap-10 max-md:items-center"
+        >
+          <section
+            class="text-2xl leading-normal text-black max-w-[300px] max-md:text-center max-sm:text-xl"
+          >
+            <p>
+              Once your authentication is
+              <strong>clear</strong>
+              <br />
+              you can click
+              <strong>Continue</strong>
+              <br />
+              to get to the last step of
+              <strong>sign up</strong>.
+            </p>
+          </section>
+
+          <section
+            class="p-8 bg-white rounded-2xl shadow-[0_4px_6px_rgba(0,0,0,0.1)] w-[400px] max-sm:p-5 max-sm:w-full"
+          >
+            <h2 class="mb-6 text-2xl font-semibold">Authentication</h2>
+
+            <form>
+              <div class="relative mb-4">
+                <label class="sr-only" for="mobile">Mobile Number</label>
+                <input
+                  type="tel"
+                  id="mobile"
+                  placeholder="Enter Mobile Number"
+                  class="p-3 w-full text-base rounded-lg border border-solid"
+                  required
+                  aria-required="true"
+                />
+                <span
+                  class="absolute -right-3 top-2/4 text-red-600 -translate-y-2/4"
+                  aria-hidden="true"
+                >
+                  *
+                </span>
+              </div>
+
+              <button
+                type="button"
+                class="flex gap-2 justify-center items-center p-3 mb-4 w-full text-base text-black bg-white rounded-lg border border-solid cursor-pointer"
+              >
+                <i class="ti ti-download text-xl" aria-hidden="true"></i>
+                <span>Get OTP</span>
+              </button>
+
+              <div class="mb-4">
+                <div class="relative mb-2 text-base">
+                  <label for="otp-group">Enter the OTP</label>
+                  <span
+                    class="absolute -right-3 top-2/4 text-red-600 -translate-y-2/4"
+                    aria-hidden="true"
+                  >
+                    *
+                  </span>
+                </div>
+                <div
+                  class="flex gap-2"
+                  role="group"
+                  id="otp-group"
+                  aria-label="OTP input"
+                >
+                  <input
+                    type="text"
+                    maxlength="1"
+                    class="text-2xl text-center text-gray-400 rounded-lg border border-solid h-[60px] w-[60px] max-sm:h-[45px] max-sm:w-[45px]"
+                    aria-label="First OTP digit"
+                  />
+                  <input
+                    type="text"
+                    maxlength="1"
+                    class="text-2xl text-center text-gray-400 rounded-lg border border-solid h-[60px] w-[60px] max-sm:h-[45px] max-sm:w-[45px]"
+                    aria-label="Second OTP digit"
+                  />
+                  <input
+                    type="text"
+                    maxlength="1"
+                    class="text-2xl text-center text-gray-400 rounded-lg border border-solid h-[60px] w-[60px] max-sm:h-[45px] max-sm:w-[45px]"
+                    aria-label="Third OTP digit"
+                  />
+                  <input
+                    type="text"
+                    maxlength="1"
+                    class="text-2xl text-center text-gray-400 rounded-lg border border-solid h-[60px] w-[60px] max-sm:h-[45px] max-sm:w-[45px]"
+                    aria-label="Fourth OTP digit"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-6 text-center">
+                <p class="mb-2 text-sm text-gray-500">Haven't received yet?</p>
+                <button
+                  type="button"
+                  class="flex gap-1 justify-center items-center w-full text-sm text-blue-500 cursor-pointer border-none"
+                >
+                  <i class="ti ti-refresh text-base" aria-hidden="true"></i>
+                  <span>Resend OTP</span>
+                </button>
+              </div>
+
+              <button
+                type="submit"
+                class="p-3 mb-4 w-full text-base text-white bg-blue-500 rounded-lg cursor-pointer border-none"
+              >
+                Continue
+              </button>
+
+              <footer class="text-sm text-center text-gray-500">
+                <nav>
+                  <a href="#" class="text-gray-500 no-underline">
+                    Terms of user
+                  </a>
+                  <span class="mx-2 my-0">|</span>
+                  <a href="#" class="text-gray-500 no-underline">
+                    Privacy policy
+                  </a>
+                </nav>
+              </footer>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
