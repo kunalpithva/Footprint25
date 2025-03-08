@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Scheduler - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center items-center min-h-screen bg-white">
+      <section
+        class="flex gap-20 items-center p-10 w-full max-w-[1200px] max-md:flex-col max-md:gap-10 max-md:p-6 max-sm:p-4"
+      >
+        <!-- Left Content: App Information -->
+        <article
+          class="flex-1 max-w-[500px] max-md:max-w-full max-md:text-center"
+        >
+          <h1
+            class="mb-6 text-3xl font-semibold text-blue-500 max-md:text-3xl max-sm:text-2xl"
+          >
+            Meeting Scheduler
+          </h1>
+          <p
+            class="text-xl leading-normal text-gray-600 max-md:text-lg max-sm:text-base"
+          >
+            Effortlessly schedule Zoom meetings for groups with our
+            user-friendly app. Secure login, calendar integration and
+            streamlined availability make organising meetings a breeze.
+          </p>
+        </article>
+
+        <!-- Right Content: Login Form -->
+        <section class="flex flex-1 justify-center">
+          <div
+            class="p-10 w-full bg-white rounded-xl max-w-[400px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] max-sm:p-6"
+          >
+            <h2
+              class="mb-8 text-2xl font-semibold text-center text-gray-900 max-sm:text-xl"
+            >
+              Welcome Back
+            </h2>
+            <form class="flex flex-col gap-4">
+              <input
+                type="email"
+                placeholder="Email address"
+                class="p-3 w-full text-base rounded-lg border border-solid"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                class="p-3 w-full text-base rounded-lg border border-solid"
+                required
+              />
+              <a
+                href="#"
+                class="text-sm text-right text-blue-500 cursor-pointer"
+              >
+                Forgot Password?
+              </a>
+              <button
+                type="submit"
+                class="p-3 text-base font-medium bg-blue-500 rounded-lg cursor-pointer border-none duration-[0.2s] text-white transition-[background-color] hover:bg-blue-600"
+              >
+                Log in
+              </button>
+              <p class="text-sm text-center text-gray-500">
+                <span>Didn't have an account?</span>
+                <a href="#" class="text-blue-500 cursor-pointer ml-1"
+                  >Sign up</a
+                >
+              </p>
+
+              <!-- Divider with OR text -->
+              <div
+                class="relative mx-0 my-6 text-center before:content-[''] before:absolute before:top-1/2 before:left-0 before:right-0 before:h-px before:bg-gray-200"
+              >
+                <span class="px-3 py-0 text-sm text-gray-500 bg-white relative">
+                  OR
+                </span>
+              </div>
+
+              <!-- Social Login Buttons -->
+              <button
+                type="button"
+                class="flex gap-3 justify-center items-center p-3 mb-3 w-full text-base font-medium rounded-lg border border-solid cursor-pointer bg-white hover:bg-gray-50 max-sm:text-sm"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/e566df1f-a243-4905-9a69-8b0b4f3d6c4c?apiKey=8147c6e676f94f1a9a2666e756b98855"
+                  alt="Google logo"
+                  class="w-6 h-6"
+                />
+                <span>Continue with Google</span>
+              </button>
+              <button
+                type="button"
+                class="flex gap-3 justify-center items-center p-3 mb-3 w-full text-base font-medium rounded-lg border border-solid cursor-pointer bg-white hover:bg-gray-50 max-sm:text-sm"
+              >
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/7c5e3f48-c3b1-4d4c-9e5d-e2c8a9e88f7c?apiKey=8147c6e676f94f1a9a2666e756b98855"
+                  alt="Apple logo"
+                  class="w-6 h-6"
+                />
+                <span>Continue with Apple</span>
+              </button>
+
+              <!-- Terms and Privacy -->
+              <p class="text-sm text-center text-gray-500">
+                <a href="#" class="hover:underline">Terms of user</a> |
+                <a href="#" class="hover:underline">Privacy policy</a>
+              </p>
+            </form>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
