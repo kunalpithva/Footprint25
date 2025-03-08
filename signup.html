@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    </head>
+  <body>
+<main
+  class="flex justify-center items-center min-h-screen bg-slate-50 p-5 max-md:flex-col max-md:gap-10"
+>
+  <section
+    class="w-[400px] bg-white rounded-2xl shadow-sm p-10 max-sm:p-6 max-sm:w-full"
+  >
+    <h1 class="text-2xl font-semibold text-gray-800 mb-6">Sign up</h1>
+    <form class="flex flex-col gap-4">
+      <input
+        type="email"
+        placeholder="Email address"
+        required
+        aria-label="Email address"
+        class="w-full p-3 text-sm text-gray-900 rounded-lg border border-gray-200 transition-colors duration-200 ease-in-out focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        required
+        aria-label="Password"
+        class="w-full p-3 text-sm text-gray-900 rounded-lg border border-gray-200 transition-colors duration-200 ease-in-out focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+      />
+      <input
+        type="password"
+        placeholder="Repeat Password"
+        required
+        aria-label="Repeat Password"
+        class="w-full p-3 text-sm text-gray-900 rounded-lg border border-gray-200 transition-colors duration-200 ease-in-out focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+      />
+      <button
+        type="submit"
+        class="w-full p-3 font-medium text-white bg-blue-500 rounded-lg transition-colors duration-200 ease-in-out hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+      >
+        Continue
+      </button>
+      <p class="text-sm text-center text-gray-500">
+        Already have an account?
+        <a
+          href="#"
+          class="text-blue-500 hover:text-blue-600 transition-colors duration-200 ml-1"
+        >
+          Sign in
+        </a>
+      </p>
+      <div class="flex items-center gap-3 my-4">
+        <div class="h-px flex-1 bg-gray-200"></div>
+        <span class="text-gray-500 text-sm font-medium">OR</span>
+        <div class="h-px flex-1 bg-gray-200"></div>
+      </div>
+      <button
+        type="button"
+        class="w-full flex items-center justify-center gap-2 p-3 font-medium text-gray-700 bg-white border border-gray-200 rounded-lg transition-colors duration-200 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:ring-offset-2"
+      >
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/75aa650c4913ba64870c3a9192ef2a89cd33efc3?apiKey=YOUR_API_KEY"
+          alt="Google"
+          class="w-5 h-5"
+        />
+        <span>Continue with Google</span>
+      </button>
+      <button
+        type="button"
+        class="w-full flex items-center justify-center gap-2 p-3 font-medium text-gray-700 bg-white border border-gray-200 rounded-lg transition-colors duration-200 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:ring-offset-2"
+      >
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/75aa650c4913ba64870c3a9192ef2a89cd33efc3?apiKey=YOUR_API_KEY"
+          alt="Apple"
+          class="w-5 h-5"
+        />
+        <span>Continue with Apple</span>
+      </button>
+      <footer class="text-xs text-center text-gray-500">
+        <nav class="space-x-2">
+          <a
+            href="#"
+            class="text-gray-500 hover:text-gray-600 transition-colors duration-200"
+          >
+            Terms of user
+          </a>
+          <span>|</span>
+          <a
+            href="#"
+            class="text-gray-500 hover:text-gray-600 transition-colors duration-200"
+          >
+            Privacy policy
+          </a>
+        </nav>
+      </footer>
+    </form>
+  </section>
+
+  <section
+    class="ml-10 max-w-[400px] max-md:ml-0 max-md:mt-5 max-md:text-center"
+  >
+    <h2 class="text-3xl font-semibold text-blue-500 mb-6 max-sm:text-2xl">
+      Meeting Scheduler
+    </h2>
+    <div class="flex flex-col gap-2">
+      <p class="text-base text-gray-600 leading-relaxed max-sm:text-sm">
+        Kindly Enter the credentials to create an account.
+      </p>
+      <p class="text-base text-gray-600 leading-relaxed max-sm:text-sm">
+        If you already have an account then
+      </p>
+      <p class="text-base text-gray-600 leading-relaxed max-sm:text-sm">
+        you can return back to Log in page.
+      </p>
+    </div>
+  </section>
+</main>
+</body>
+</html>
