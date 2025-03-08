@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Conference</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.30.0/tabler-icons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flex flex-col h-screen bg-gray-50">
+      <!-- Header Section -->
+      <header
+        class="flex justify-between items-center p-5 border-b border-solid max-sm:flex-col max-sm:gap-2.5 max-sm:items-start"
+      >
+        <h1 class="text-lg font-semibold text-gray-900">
+          Weekly General Team Meeting
+        </h1>
+        <button class="text-sm text-blue-600 cursor-pointer">
+          Invite Participant
+        </button>
+        <p class="text-sm text-gray-500">Participant (5)</p>
+      </header>
+
+      <!-- Video Preview Carousel -->
+      <section class="flex gap-2.5 justify-center items-center p-2.5">
+        <button
+          class="flex justify-center items-center text-gray-500 bg-white rounded-full cursor-pointer h-[30px] shadow-[0_1px_3px_rgba(0,0,0,0.1)] w-[30px]"
+        >
+          <i class="ti ti-chevron-left"></i>
+        </button>
+        <div class="flex gap-2.5">
+          <figure class="overflow-hidden h-20 rounded-lg w-[120px]">
+            <img
+              src="https://placehold.co/120x80/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden h-20 rounded-lg w-[120px]">
+            <img
+              src="https://placehold.co/120x80/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden h-20 rounded-lg w-[120px]">
+            <img
+              src="https://placehold.co/120x80/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+        </div>
+        <button
+          class="flex justify-center items-center text-gray-500 bg-white rounded-full cursor-pointer h-[30px] shadow-[0_1px_3px_rgba(0,0,0,0.1)] w-[30px]"
+        >
+          <i class="ti ti-chevron-right"></i>
+        </button>
+      </section>
+
+      <!-- Main Content Area -->
+      <div class="flex overflow-hidden flex-1">
+        <!-- Video Grid -->
+        <section
+          class="grid flex-1 gap-2.5 p-5 grid-cols-[repeat(4,1fr)] max-md:grid-cols-[repeat(3,1fr)] max-sm:grid-cols-[repeat(2,1fr)]"
+        >
+          <figure class="overflow-hidden relative rounded-lg aspect-[16/9]">
+            <img
+              src="https://placehold.co/300x200/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden relative rounded-lg aspect-[16/9]">
+            <img
+              src="https://placehold.co/300x200/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden relative rounded-lg aspect-[16/9]">
+            <img
+              src="https://placehold.co/300x200/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden relative rounded-lg aspect-[16/9]">
+            <img
+              src="https://placehold.co/300x200/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden relative rounded-lg aspect-[16/9]">
+            <img
+              src="https://placehold.co/300x200/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden relative rounded-lg aspect-[16/9]">
+            <img
+              src="https://placehold.co/300x200/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden relative rounded-lg aspect-[16/9]">
+            <img
+              src="https://placehold.co/300x200/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden relative rounded-lg aspect-[16/9]">
+            <img
+              src="https://placehold.co/300x200/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden relative rounded-lg aspect-[16/9]">
+            <img
+              src="https://placehold.co/300x200/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden relative rounded-lg aspect-[16/9]">
+            <img
+              src="https://placehold.co/300x200/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden relative rounded-lg aspect-[16/9]">
+            <img
+              src="https://placehold.co/300x200/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+          <figure class="overflow-hidden relative rounded-lg aspect-[16/9]">
+            <img
+              src="https://placehold.co/300x200/e6e6e6/e6e6e6"
+              alt=""
+              class="object-cover size-full"
+            />
+          </figure>
+        </section>
+
+        <!-- Sidebar -->
+        <aside
+          class="flex flex-col bg-white border-l border-solid w-[300px] max-md:w-[250px] max-sm:hidden"
+        >
+          <!-- Participants List -->
+          <section class="p-5 border-b border-solid">
+            <!-- Host Participant -->
+            <article class="flex gap-2.5 items-center px-0 py-2.5">
+              <figure>
+                <img
+                  src="https://placehold.co/40x40/e6e6e6/e6e6e6"
+                  alt="Host"
+                  class="w-10 h-10 rounded-full"
+                />
+              </figure>
+              <h3 class="flex-1 text-sm text-gray-900">Akbar Husain</h3>
+              <span class="text-xs text-blue-600">Host</span>
+              <div class="flex gap-2.5 text-gray-500">
+                <i class="ti ti-microphone"></i>
+                <i class="ti ti-video"></i>
+              </div>
+            </article>
+
+            <!-- Regular Participants -->
+            <article class="flex gap-2.5 items-center px-0 py-2.5">
+              <figure>
+                <img
+                  src="https://placehold.co/40x40/e6e6e6/e6e6e6"
+                  alt=""
+                  class="w-10 h-10 rounded-full"
+                />
+              </figure>
+              <h3 class="flex-1 text-sm text-gray-900">Aneesh Menon</h3>
+              <div class="flex gap-2.5 text-gray-500">
+                <i class="ti ti-microphone"></i>
+                <i class="ti ti-video"></i>
+              </div>
+            </article>
+
+            <article class="flex gap-2.5 items-center px-0 py-2.5">
+              <figure>
+                <img
+                  src="https://placehold.co/40x40/e6e6e6/e6e6e6"
+                  alt=""
+                  class="w-10 h-10 rounded-full"
+                />
+              </figure>
+              <h3 class="flex-1 text-sm text-gray-900">Jonathan Sasi</h3>
+              <div class="flex gap-2.5 text-gray-500">
+                <i class="ti ti-microphone"></i>
+                <i class="ti ti-video"></i>
+              </div>
+            </article>
+
+            <article class="flex gap-2.5 items-center px-0 py-2.5">
+              <figure>
+                <img
+                  src="https://placehold.co/40x40/e6e6e6/e6e6e6"
+                  alt=""
+                  class="w-10 h-10 rounded-full"
+                />
+              </figure>
+              <h3 class="flex-1 text-sm text-gray-900">Riska Thakur</h3>
+              <div class="flex gap-2.5 text-gray-500">
+                <i class="ti ti-microphone"></i>
+                <i class="ti ti-video"></i>
+              </div>
+            </article>
+
+            <article class="flex gap-2.5 items-center px-0 py-2.5">
+              <figure>
+                <img
+                  src="https://placehold.co/40x40/e6e6e6/e6e6e6"
+                  alt=""
+                  class="w-10 h-10 rounded-full"
+                />
+              </figure>
+              <h3 class="flex-1 text-sm text-gray-900">Natalia</h3>
+              <div class="flex gap-2.5 text-gray-500">
+                <i class="ti ti-microphone"></i>
+                <i class="ti ti-video"></i>
+              </div>
+            </article>
+
+            <article class="flex gap-2.5 items-center px-0 py-2.5">
+              <figure>
+                <img
+                  src="https://placehold.co/40x40/e6e6e6/e6e6e6"
+                  alt=""
+                  class="w-10 h-10 rounded-full"
+                />
+              </figure>
+              <h3 class="flex-1 text-sm text-gray-900">Alia Thakur</h3>
+              <div class="flex gap-2.5 text-gray-500">
+                <i class="ti ti-microphone"></i>
+                <i class="ti ti-video"></i>
+              </div>
+            </article>
+          </section>
+
+          <!-- Chat Section -->
+          <section class="flex flex-col flex-1 p-5">
+            <h2 class="mb-2.5 font-semibold">Chat Room</h2>
+            <p class="mb-5 text-xs text-gray-500">Riska Thakur is Typing...</p>
+
+            <!-- Chat Messages -->
+            <div class="overflow-y-auto flex-1">
+              <article class="flex gap-2.5 items-start mb-4">
+                <figure>
+                  <img
+                    src="https://placehold.co/30x30/e6e6e6/e6e6e6"
+                    alt=""
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                </figure>
+                <p class="px-3 py-2 text-sm bg-gray-100 rounded-xl">
+                  Can u hear my voice
+                </p>
+                <time class="text-xs text-gray-500">2 hours ago</time>
+              </article>
+
+              <article class="flex gap-2.5 items-start mb-4">
+                <figure>
+                  <img
+                    src="https://placehold.co/30x30/e6e6e6/e6e6e6"
+                    alt=""
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                </figure>
+                <p class="px-3 py-2 text-sm bg-gray-100 rounded-xl">
+                  Ok wait, 5 min
+                </p>
+              </article>
+
+              <article class="flex gap-2.5 items-start mb-4">
+                <figure>
+                  <img
+                    src="https://placehold.co/30x30/e6e6e6/e6e6e6"
+                    alt=""
+                    class="rounded-full h-[30px] w-[30px]"
+                  />
+                </figure>
+                <p class="px-3 py-2 text-sm bg-gray-100 rounded-xl">
+                  Thanks ...
+                </p>
+              </article>
+            </div>
+
+            <!-- Chat Input -->
+            <form class="flex gap-2.5 mt-5">
+              <input
+                type="text"
+                placeholder="Message..."
+                class="flex-1 px-3 py-2 text-sm rounded-3xl border border border-solid"
+              />
+              <button
+                type="submit"
+                class="flex justify-center items-center w-8 h-8 text-white bg-blue-600 rounded-full cursor-pointer border-[none]"
+              >
+                <i class="ti ti-send"></i>
+              </button>
+            </form>
+          </section>
+        </aside>
+      </div>
+
+      <!-- Bottom Controls -->
+      <footer
+        class="flex gap-5 justify-center p-5 bg-white border-t border-solid max-sm:gap-2.5"
+      >
+        <button
+          class="flex justify-center items-center w-10 h-10 text-gray-500 bg-gray-100 rounded-full cursor-pointer max-sm:h-[35px] max-sm:w-[35px]"
+        >
+          <i class="ti ti-volume"></i>
+        </button>
+        <button
+          class="flex justify-center items-center w-10 h-10 text-gray-500 bg-gray-100 rounded-full cursor-pointer max-sm:h-[35px] max-sm:w-[35px]"
+        >
+          <i class="ti ti-upload"></i>
+        </button>
+        <button
+          class="flex justify-center items-center w-10 h-10 text-gray-500 bg-gray-100 rounded-full cursor-pointer max-sm:h-[35px] max-sm:w-[35px]"
+        >
+          <i class="ti ti-microphone"></i>
+        </button>
+        <button
+          class="flex justify-center items-center w-10 h-10 text-gray-500 bg-gray-100 rounded-full cursor-pointer max-sm:h-[35px] max-sm:w-[35px]"
+        >
+          <i class="ti ti-phone-off"></i>
+        </button>
+        <button
+          class="flex justify-center items-center w-10 h-10 text-gray-500 bg-gray-100 rounded-full cursor-pointer max-sm:h-[35px] max-sm:w-[35px]"
+        >
+          <i class="ti ti-video"></i>
+        </button>
+        <button
+          class="flex justify-center items-center w-10 h-10 text-gray-500 bg-gray-100 rounded-full cursor-pointer max-sm:h-[35px] max-sm:w-[35px]"
+        >
+          <i class="ti ti-settings"></i>
+        </button>
+        <button
+          class="flex justify-center items-center w-10 h-10 text-gray-500 bg-gray-100 rounded-full cursor-pointer max-sm:h-[35px] max-sm:w-[35px]"
+        >
+          <i class="ti ti-maximize"></i>
+        </button>
+      </footer>
+    </main>
+  </body>
+</html>
